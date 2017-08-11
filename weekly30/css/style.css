@@ -22,7 +22,7 @@ html {
     height: 180px;
     position: fixed;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.7);
+/*    background: rgba(255, 255, 255, 0.7);*/
 }
 
 .main-menu {
@@ -141,7 +141,6 @@ header div p {
 
 .description-text {
     max-width: 100%;
-    width: 100%;
     text-align: left;
     margin: 0 auto;
     font-family: Roboto, sans-serif;
@@ -228,36 +227,30 @@ header div p {
 }
 
 
-.buttons {
-    width: 50%;
-    float: left;
-    height: 100%;
-    background-image: url('../img/blue-buttons.png') no-repeat;
-    background-size: auto 100%;
-}
-
-.buttons-img {
-    width: 100%;
-    height: 650px;
-}
-
 .wrapper-news {
-    height: 100%;
     width: 100%;
+    display: flex;
+}
+
+.buttons {
+    height: 100%;
+    background-image: url('../img/blue-buttons.png');
+    background-size:cover;
 }
 
 .news {
-    height: 650px;
+    height: 100%;
     float: left;
     width: 50%;     
 }
 
-.news2 {
-    height: 100%;
-    padding-left: 130px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    width: 300px;
+.inside-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    height: 400px;
+    
 }
 
 .news-title {
@@ -282,27 +275,214 @@ header div p {
 }
 
 .news-2 {
-    margin-top: 55px;
-    margin-bottom: 55px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .flex-articles {
-    display: flex;
-    flex-direction: row;
+    display: flex; 
     flex-wrap: nowrap;
-    justify-content: center;
-    width: 70%;
+    max-width: 1110px;
     margin: 0 auto;
+    justify-content: space-around;
 }
 
 .art {
-    width: 33.33%;
-    color: #222222;
-    font-family: 'Roboto', serif;
-    margin-top: 140px;
+    font-family: 'Roboto', serif; 
     text-align: center;
     margin-bottom: 130px;
+    
 }
+@media (min-width: 0) and (max-width: 799px)
+{
+    .wrapper-news {
+        flex-direction: column;
+        height: 1000px;
+    }
+    .buttons, .news {
+        width: 100%;
+    }
+    .inside-news {
+        margin: 0 auto;
+        max-width: 450px;
+        margin-top: 50px;
+    }
+    .news-title, .news-text {
+        text-align: center;
+    }
+}
+
+@media (min-width: 0) and (max-width: 600px)
+{
+    .quote-text {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media (min-width: 800px) /*and (max-width: 899px)*/ /*od 800px do nieskonczonosci */
+{
+    .wrapper-news {
+        flex-direction: row;
+        height: 720px;
+        justify-content: baseline;
+    }
+    .buttons, .news {
+        width: 50%;
+    }
+    .inside-news {
+        padding-top: 150px;
+        padding-left: 30px;
+        
+    }
+    .art-title {
+        padding-bottom: 50px;
+    }
+    .art-text {
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media (min-width: 0) and (max-width: 479px) /* do 899px */
+{
+    .map {
+        width: 290px;
+    }
+    .wrapper-1110-footer {
+        flex-direction: column;
+    }
+    .icons, .copyrights {
+        width: 100%;
+        text-align: center;  
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 480px)
+{
+    
+    .wrapper-1110-footer {
+        flex-direction: row;
+    }
+    .icons, .copyrights {
+        width: 50%;
+        padding: 0;
+        padding-bottom: 40px;
+        padding-top: 50px;
+    }
+    .icons {
+        text-align: left;
+    }
+    .copyrights {
+        text-align: right;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 700px) /* do 700px */
+{
+    .map {
+        width: 400px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 899px) /* do 899px */
+{
+    .map {
+        width: 600px;
+    }
+}
+
+
+@media (max-width: 899px) /* do 899px */
+{
+    .flex-articles {
+        flex-direction: column;
+        width: 90%; /*da nam paddingi po lewej i prawej stronie, po rowno */
+        margin-top: 100px;
+    }
+    
+    .art {
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+    .inside-news {
+        
+    }
+    .wrapper-1110 {
+        width: 90%;
+        flex-direction: column;
+    }
+    .bg-map, .bg-wrapper {
+        width: 100%;
+    }
+    .map {
+        margin: 0 auto;
+    }
+    .bg-text {
+        text-align: center;
+        width: 100%;
+    }
+    .contact-bg {
+        height: auto;
+    }
+    
+    .wrapper-1110-footer {
+        width: 90%;
+    }
+    .art-title, .art-text {
+        padding-bottom: 20px;
+    }
+    .art-title {
+        padding-top: 50px;
+    }
+}
+
+
+
+@media (min-width: 900px) /* od 900px */
+{
+    .flex-articles {
+        flex-direction: row;
+        color: #222222;
+        
+    }
+    .art {
+        width: 30%;
+        margin-top: 140px;
+    }
+    .wrapper-1110 {
+        flex-direction: row;
+        width: 90%;
+    }
+    .wrapper-1110-footer {
+        width: 90%;
+    }
+    .bg-map, .bg-wrapper {
+        width: 50%;
+    }
+    .bg-text {
+        width: 350px;
+    }
+    .contact-bg {
+        height: 470px;
+    }
+    .map {
+        width: 540px;
+    }
+    
+}
+
+
+@media (min-width: 1100px) /* od 900px */
+{
+    .inside-news {
+        padding-left: 130px;
+    }
+}
+
 
 .art-item-2 {
     padding-left: 150px;
@@ -313,7 +493,6 @@ header div p {
     font-family: 'Roboto', serif;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 50px;
     font-size: 15px;
     font-size: 1.5rem;
 }
@@ -322,7 +501,6 @@ header div p {
     text-align: center;
     font-size: 14px;
     font-size: 1.4rem;
-    padding-bottom: 50px;
     font-weight: 300;
 }
 
@@ -333,22 +511,27 @@ header div p {
 
 .contact-bg {
     background-color: #353535;
-    height: 470px;
+    
 }
 
 .wrapper-1110 {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
-.bg-wrapper {
-    width: 50%;
-    float: left;
+.wrapper-1110-footer {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
+
 
 .bg-text {
     color: white;
-    width: 350px;
+    
     font-weight: 300;
     padding-top: 100px;
     line-height: 2.2rem;
@@ -359,31 +542,17 @@ header div p {
     padding-bottom: 35px;
 }
 
-.bg-map {
-    float: right;
-    width: 50%;
-}
 
-.map {
-    width: 540px;
-    float: right;
-}
+
+
 
 .icons {
     height: 30px;
     color: #444444;
-    padding-top: 50px;
-    padding-bottom: 50px;
     letter-spacing: 1.2rem;
     font-size: 2.2rem;
-    float: left;
-    width: 50%;
 }
 
 .copyrights {
-    width: 50%;
-    float: right;
-    text-align: right;
-    padding-top: 50px;
     color: darkgray;
 }
