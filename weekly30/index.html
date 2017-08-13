@@ -175,8 +175,15 @@
         });
     });
     
-   
     
+    
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
     
     
     
@@ -196,23 +203,26 @@
                 $('.nav-menu').removeClass('sticky');
                 $('.clearfix').removeClass('sticky-ul');
             }
-        })
-        
+        })  
     }
     else if ($(window).width() < 720 )
     {
         jQuery(document).ready(function() {
-        jQuery('li').click(function() {
-            jQuery('.nav-menu').slideToggle();
-        });
-    });
-        
-        
-        
+            jQuery('li').click(function() {
+                jQuery('.nav-menu').slideToggle();
+            });
+        });   
     }
     
     
     
+    
+    
+    
+    
+    
+    
+
     
     
     
