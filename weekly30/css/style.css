@@ -101,7 +101,7 @@ li:last-child {
 .main {
     width: 100%;
     height: 100vh;
-    background: url("../img/main.png");
+    background: url("../img/main.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -198,23 +198,23 @@ li:last-child {
 }
 
 .item-1 {
-    background-image: url('../img/project-1.png');
+    background-image: url('../img/project-1.jpg');
 
 }
 .item-2 {
-    background-image: url('../img/project-2.png');
+    background-image: url('../img/project-2.jpg');
 }
 .item-3 {
-    background-image: url('../img/project-3.png');
+    background-image: url('../img/project-3.jpg');
 }
 .item-4 {
-    background-image: url('../img/project-4.png');
+    background-image: url('../img/project-4.jpg');
 }
 .item-5 {
-    background-image: url('../img/project-5.png');
+    background-image: url('../img/project-5.jpg');
 }
 .item-6 {
-    background-image: url('../img/project-6.png');
+    background-image: url('../img/project-6.jpg');
 }
 
 
@@ -278,7 +278,7 @@ li:last-child {
 
 .buttons {
     height: 100%;
-    background-image: url('../img/blue-buttons.png');
+    background-image: url('../img/blue-buttons.jpg');
     background-size:cover;
 }
 
