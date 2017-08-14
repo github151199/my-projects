@@ -179,7 +179,10 @@ li:last-child {
     justify-content: center;
     width: 100%;
     float: left;
+    height: 50vh;
 }
+
+
 
 .portfolio-items-2 {
     display: flex;
@@ -189,64 +192,61 @@ li:last-child {
     width: 100%;
     float: left;
     padding-bottom: 190px;
+    height: 50vh;
 }
 
 
 .item {
-    width: 33.33%;
+    width: 32.96vw;
     height: 50vh;
+    position: relative;
+
 }
 
+
+.textt {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    height: 56%;
+    width: 100%;
+    text-align: center;
+    padding-top:15vh;
+    color: white;
+    font-size: 24px;
+    font-size: 2.4rem;
+    transition: all 0.3s ease;
+}
+
+.textt:hover {
+    padding-top: 22vh;
+    opacity: 1;
+}
+
+
+
 .item-1 {
-    background-image: url('../img/project-1.jpg');
+/*    background-image: url('../img/project-1.jpg');*/
 
 }
 .item-2 {
-    background-image: url('../img/project-2.jpg');
+/*    background-image: url('../img/project-2.jpg');*/
 }
 .item-3 {
-    background-image: url('../img/project-3.jpg');
+/*    background-image: url('../img/project-3.jpg');*/
 }
 .item-4 {
-    background-image: url('../img/project-4.jpg');
+/*    background-image: url('../img/project-4.jpg');*/
 }
 .item-5 {
-    background-image: url('../img/project-5.jpg');
+/*    background-image: url('../img/project-5.jpg');*/
 }
 .item-6 {
-    background-image: url('../img/project-6.jpg');
+/*    background-image: url('../img/project-6.jpg');*/
 }
 
 
-.item-black {
-    background: black;
-    width: 100%;
-    height: 50vh;
-    opacity: 0;
-    transition: all 0.2s ease;
-}
-
-.item-black:hover {
-    opacity: 0.7;
-}
-
-
-.item-black > p {
-    opacity: 0;
-    font-size: 24px;
-    font-size: 2.4rem;
-    color: white;
-    width: 100%;
-    height: 50vh;
-    transition: all 0.3s ease;
-    text-align: center;
-    padding-top: 15vh;
-}
-
-.item-black > p:hover {
-    padding-top: 23vh;
-    opacity: 1;
-}
 
 
 .quote-text {
