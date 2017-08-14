@@ -262,6 +262,7 @@ li:last-child {
 .news-1, .news-2, .news-3 {
     transition: all 0.2s ease;
     width: 300px;
+    margin: 0 auto;
 }
 
 .news-1:hover, .news-2:hover, .news-3:hover {
