@@ -175,9 +175,8 @@ li:last-child {
 .portfolio-items {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 98.88vw;
     float: left;
     height: 50vh;
 }
@@ -187,20 +186,19 @@ li:last-child {
 .portfolio-items-2 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     float: left;
-    padding-bottom: 190px;
+    
     height: 50vh;
 }
 
 
 .item {
-    width: 32.96vw;
+    
     height: 50vh;
     position: relative;
-
 }
 
 
@@ -758,4 +756,34 @@ ul li {
           margin: 0 auto 100px;
           text-align: center; 
     } 
+}
+
+@media (min-width: 0px) and (max-width: 679px) 
+{
+    .item {
+        width: 100vw;
+    }
+    .portfolio-items {
+        padding-bottom: 2000px;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 1000px) 
+{
+    .item {
+        width: 49.4vw;
+    }
+    .portfolio-items {
+        padding-bottom: 890px; 
+    }
+}
+
+@media (min-width: 1001px)
+{
+    .item {
+        width: 32.96vw;
+    }
+    .portfolio-items {
+        padding-bottom: 590px;
+    }
 }
