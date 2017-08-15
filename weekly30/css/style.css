@@ -812,7 +812,7 @@ ul li {
 {
     .item {
         width: 49.4vw;
-        height: 38vh;
+        height: auto;
     }
     .portfolio-items {
         padding-bottom: 1690px;
