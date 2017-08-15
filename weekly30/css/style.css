@@ -219,7 +219,7 @@ li:after {
     position: absolute;
     top: 0;
     background: rgba(0,0,0,0.7);
-    height: 56%;
+/*    height: 56%;*/
     width: 100%;
     text-align: center;
     padding-top:15vh;
@@ -586,10 +586,6 @@ ul li {
         padding-left: 40px;
         padding-right: 40px;
     }
-    .item-black > p {
-        font-size: 18px;
-        font-size: 1.8rem;
-    }
 }
 
 
@@ -780,25 +776,51 @@ ul li {
     } 
 }
 
+@media (min-width: 0) and (max-width: 399px) 
+{
+    .item {
+        width: 80vw;
+        height: 35vh;
+    }
+    .textt {
+        width: 80vw;
+        height: 37.5%;
+    }
+    .portfolio-items {
+        padding-bottom: 1290px;
+        justify-content: center;
+    }
+}
+
 @media (min-width: 400px) and (max-width: 599px) 
 {
     .item {
         width: 95vw;
+        
     }
     .portfolio-items {
-        padding-bottom: 2000px;
+        padding-bottom: 1690px;
         justify-content: center;
+    }
+    .textt {
+        width: 95vw;
+        height: 56%;
     }
 }
 
 @media (min-width: 600px) and (max-width: 799px) 
 {
     .item {
-        width: 68vw;
+        width: 49.4vw;
+        height: 38vh;
     }
     .portfolio-items {
-        padding-bottom: 2000px;
+        padding-bottom: 1690px;
         justify-content: center;
+    }
+    .textt {
+        width: 50vw;
+        height: 56%;
     }
 }
 
@@ -806,9 +828,14 @@ ul li {
 {
     .item {
         width: 49.4vw;
+        height: 45vh;
     }
     .portfolio-items {
-        padding-bottom: 890px; 
+        padding-bottom: 790px; justify-content: center;
+    }
+    .textt {
+        width: 49.4vw;
+        height: 56%;
     }
 }
 
@@ -816,9 +843,14 @@ ul li {
 {
     .item {
         width: 32.96vw;
+        height: 50vh;
     }
     .portfolio-items {
-        padding-bottom: 590px;
+        padding-bottom: 490px;
+    }
+    .textt {
+        width: 32.96vw;
+        height: 56%;
     }
 }
 
@@ -828,3 +860,4 @@ ul li {
         max-width: 540px;
         width: 96%;
     }
+    
