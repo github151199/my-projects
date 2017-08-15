@@ -808,7 +808,7 @@ ul li {
     }
     .textt {
         width: 95vw;
-        height: 56%;
+        height: 54%;
     }
     .wrapper2 {
         height: 270vh;
@@ -848,7 +848,7 @@ ul li {
     }
     .textt {
         width: 49.4vw;
-        height: 56%;
+        height: 51.5%;
     }
     .wrapper2 {
         height: 135vh;
@@ -867,7 +867,7 @@ ul li {
     }
     .textt {
         width: 32.96vw;
-        height: 56%;
+        height: 45%;
     }
     .wrapper2 {
         height: 80vh;
@@ -933,7 +933,7 @@ ul li {
 {
     .item {
         width: 44vw;
-        height: 45vh;
+        height: 70vh;
     }
     .portfolio-items {
 /*        padding-bottom: 1690px;*/
@@ -941,10 +941,10 @@ ul li {
     }
     .textt {
         width: 44vw;
-        height: 51%;
+        height: 68.6%;
     }
     .wrapper2 {
-        height: 135vh;
+        height: 210vh;
         padding-bottom: 190px;
     }
 }
