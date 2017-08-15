@@ -796,7 +796,7 @@ ul li {
 {
     .item {
         width: 95vw;
-        
+        height: auto;
     }
     .portfolio-items {
         padding-bottom: 1690px;
