@@ -860,4 +860,13 @@ ul li {
         max-width: 540px;
         width: 96%;
     }
-    
+}
+
+@media (max-height: 480px) 
+{
+    .portfolio-items {
+        padding-bottom: 500px;
+    }
+}
+
+
