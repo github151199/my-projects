@@ -190,7 +190,7 @@ li:after {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 98.88vw;
+/*    width: 98.9vw;*/
     float: left;
     height: 50vh;
 }
@@ -861,7 +861,7 @@ ul li {
 @media (min-width: 1401px) 
 {
     .item {
-        max-width: 32.96vw;
+        max-width: 32.9vw;
         height: 50vh;
     }
     .portfolio-items {
