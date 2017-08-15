@@ -169,7 +169,7 @@ li:after {
 }
 
 .wrapper2 {
-    padding-bottom: 300px;
+/*    padding-bottom: 300px;*/
 }
 
 .btn {
@@ -790,21 +790,29 @@ ul li {
         padding-bottom: 1290px;
         justify-content: center;
     }
+    .wrapper2 {
+        height: 210vh;
+        padding-bottom: 190px;
+    }
 }
 
 @media (min-width: 400px) and (max-width: 599px) 
 {
     .item {
         width: 95vw;
-        height: auto;
+        height: 45vh;
     }
     .portfolio-items {
-        padding-bottom: 1690px;
+/*        padding-bottom: 1690px;*/
         justify-content: center;
     }
     .textt {
         width: 95vw;
         height: 56%;
+    }
+    .wrapper2 {
+        height: 270vh;
+        padding-bottom: 190px;
     }
 }
 
@@ -812,15 +820,19 @@ ul li {
 {
     .item {
         width: 49.4vw;
-        height: auto;
+        height: 30vh;
     }
     .portfolio-items {
-        padding-bottom: 1690px;
+/*        padding-bottom: 1690px;*/
         justify-content: center;
     }
     .textt {
         width: 50vw;
         height: 56%;
+    }
+    .wrapper2 {
+        height: 90vh;
+        padding-bottom: 190px;
     }
 }
 
@@ -831,11 +843,16 @@ ul li {
         height: 45vh;
     }
     .portfolio-items {
-        padding-bottom: 790px; justify-content: center;
+/*        padding-bottom: 790px; */
+        justify-content: center;
     }
     .textt {
         width: 49.4vw;
         height: 56%;
+    }
+    .wrapper2 {
+        height: 135vh;
+        padding-bottom: 190px;
     }
 }
 
@@ -862,7 +879,7 @@ ul li {
     }
 }
 
-@media (max-height: 480px) 
+@media (max-width: 480px) 
 {
     .portfolio-items {
         padding-bottom: 500px;
