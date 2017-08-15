@@ -12,7 +12,8 @@ html {
 }
 
 body {
-    font-size:1.6rem;
+    font-size: 1.6rem;
+    font-size: 16px;
     position: absolute;
     background-color: white;
 }
@@ -76,6 +77,7 @@ ul {
     width: 712px;
     margin: 0 auto;
     font-size: 1rem;
+    font-size: 10px;
     line-height: 1.5rem;
     letter-spacing: 0.35rem;
     transition: all 0.5s ease;
@@ -266,6 +268,7 @@ li:after {
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     font-size: 24px;
+    font-size: 2.4rem;
     color: darkgray;
     padding-bottom: 190px;
 }
@@ -410,6 +413,7 @@ li:after {
     color: #444444;
     letter-spacing: 1.2rem;
     font-size: 2.2rem;
+    font-size: 22px;
 }
 
 .copyrights {
@@ -418,36 +422,17 @@ li:after {
 
 
 
-/*********************************************************************/
-
-
-
-/************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
+/* responsive design */
 
 /* Nav Menu */
-
-
-
-
 
 @media screen and (min-width: 721px) 
 {
     .nav-menu {
-    height: 180px;
+        height: 180px;
     }
     ul {
-    height: 50px;
+        height: 50px;
         padding-top: 80px;
     }
 }
@@ -456,11 +441,9 @@ li:after {
 .nav-menu {
     margin: 0 auto;
     width: 100%;
-    
     position: fixed;
     z-index: 100;
     background: rgba(255, 255, 255, 0.8);
-/*    transition: all 0.05s ease;*/
 }
 
 .sticky {
@@ -488,7 +471,6 @@ ul li {
 }
 
 @media screen and (max-width: 720px) {
-	
 	.hamburger {
 		display: block;
 		color: #222222;
@@ -515,6 +497,7 @@ ul li {
 		padding-left: 30px;
         padding-right: 0;
         font-size: 16px;
+        font-size: 1.6rem;
         line-height: 2.2rem;
         text-align: left;
 	}
@@ -528,13 +511,11 @@ ul li {
         z-index: 1;
     }
     ul {
-/*        padding-top: 50px;*/
         height: 130px;
     }
     
     li:hover::after {
-    width: 135px;
-/*    //transition: width 0.3s;*/
+        width: 135px;
     }
 }
 
@@ -543,10 +524,6 @@ ul li {
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 */
-
-
-
-
 
 
 
@@ -594,7 +571,6 @@ ul li {
     .wrapper-news {
         flex-direction: row;
         height: 720px;
-/*        justify-content: baseline;*/
     }
     .buttons, .news {
         width: 50%;
@@ -669,14 +645,11 @@ ul li {
     .flex-articles {
         flex-direction: column;
         width: 90%; /*da nam paddingi po lewej i prawej stronie, po rowno */
-        
     }
-    
     .art {
         margin-bottom: 40px;
         margin-top: 0;
     }
-    
     .wrapper-1110 {
         width: 90%;
         flex-direction: column;
@@ -719,7 +692,6 @@ ul li {
     .flex-articles {
         flex-direction: row;
         color: #222222;
-        
     }
     .art {
         width: 19%; /* bylo 30% */
@@ -767,12 +739,12 @@ ul li {
 
 @media (max-width: 1200px) 
 {
-      .main div {
+    .main div {
         width: 100%;
         margin: 0 20px; }
-      .main div p {
-          margin: 0 auto 100px;
-          text-align: center; 
+    .main div p {
+        margin: 0 auto 100px;
+        text-align: center; 
     } 
 }
 
@@ -803,7 +775,6 @@ ul li {
         height: 45vh;
     }
     .portfolio-items {
-/*        padding-bottom: 1690px;*/
         justify-content: center;
     }
     .textt {
@@ -823,7 +794,6 @@ ul li {
         height: 30vh;
     }
     .portfolio-items {
-/*        padding-bottom: 1690px;*/
         justify-content: center;
     }
     .textt {
@@ -843,7 +813,6 @@ ul li {
         height: 45vh;
     }
     .portfolio-items {
-/*        padding-bottom: 790px; */
         justify-content: center;
     }
     .textt {
@@ -862,9 +831,6 @@ ul li {
         width: 32.96vw;
         height: 40vh;
     }
-    .portfolio-items {
-/*        padding-bottom: 490px;*/
-    }
     .textt {
         width: 32.96vw;
         height: 45%;
@@ -881,10 +847,6 @@ ul li {
         width: 32.96vw;
         height: 50vh;
     }
-    .portfolio-items {
-/*        padding-bottom: 490px;*/
-        
-    }
     .textt {
         width: 32.96vw;
         height: 56%;
@@ -896,10 +858,6 @@ ul li {
     }
 }
 
-
-
-
-
 @media (min-width: 1401px) 
 {
     .item {
@@ -907,7 +865,6 @@ ul li {
         height: 50vh;
     }
     .portfolio-items {
-/*        padding-bottom: 490px;*/
         justify-content: center;
     }
     .textt {
@@ -919,9 +876,16 @@ ul li {
         height: 100vh;
         padding-bottom: 190px;
     }
+    .wrapper-news {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    .description-container {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    
 }
-
-
 
 
 
@@ -939,23 +903,6 @@ ul li {
         padding-bottom: 500px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (min-width: 0) and (max-width: 599px) and (orientation: landscape)
@@ -997,5 +944,65 @@ ul li {
     .wrapper2 {
         height: 165vh;
         padding-bottom: 190px;
+    }
+}
+
+
+/*styles for big screens*/
+@media (min-width: 1800px)
+{
+    html {
+        font-size: 80%;
+    }
+    ul {
+        width: 910px;
+        font-size: 13px;
+        font-size: 1.3rem;
+    }
+    .main div h1 {
+        font-size: 20px;
+        font-size: 2rem;
+        max-width: 700px;
+    }
+    .main div {
+        width: 1610px;
+    }
+    .flex-articles {
+        max-width: 1610px;
+    }
+    .art-title {
+        font-size: 20px;
+        font-size: 2rem;
+    }
+    .art-text {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    .wrapper-1110 {
+        max-width: 1610px;
+    }
+    .bg-text {
+        width: 530px;
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+    .inside-news {
+        padding-top: 100px;
+    }
+    .item {
+        width: 30vw;
+        height: 40vh;
+    }
+    .portfolio-items {
+/*        padding-bottom: 1690px;*/
+        justify-content: center;
+    }
+    .textt {
+        width: 44vw;
+        height: 68.6%;
+    }
+    .wrapper2 {
+        height: 80vh;
+/*        padding-bottom: 190px;*/
     }
 }
