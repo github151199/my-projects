@@ -152,7 +152,7 @@ li:after {
 }
 
 .description-text {
-    max-width: 100%;
+    max-width: 720px;
     text-align: left;
     margin: 0 auto;
     font-family: Roboto, sans-serif;
@@ -907,9 +907,9 @@ ul li {
 .box {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     height: 100vh;
     margin-bottom: 150px;
+    max-width: 1500px;
 }
 
 .box a {
